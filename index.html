@@ -26,6 +26,9 @@
       <nav class="nav center">
         <ul class="nav__list center">
           <li class="nav__list-item">
+            <a class="link link--nav" href="#about-me">About Me</a>
+          </li>
+          <li class="nav__list-item">
             <a class="link link--nav" href="#experience">Experience</a>
           </li>
           <li class="nav__list-item">
@@ -104,6 +107,25 @@
           </a>
         </div>
       </div>
+
+      <section id="about-me" class="section">
+        <h2 class="section__title">About Me</h2>
+        <div class="about-card-container">
+          <div class="about-card__image">
+            <img src="assets/images/About_me.jpg" alt="Nafis About Me" />
+          </div>
+
+          <div class="about-card__content project">
+            <h3>Life Outside of Code</h3>
+            <p class="about-card__text">
+              I believe great engineering requires balance. When I'm not coding, I find my balance by hiking or traveling with my wife. 
+              As a dedicated tech enthusiast, I enjoy building custom PCs and researching the latest smartphones and accessories. 
+              I'm a mechanical keyboard hobbyist, appreciating the tactile intersection of hardware and software. 
+              I also find creative focus in graphic design, while prioritizing downtime for self-improvement
+              and mental health.
+            </p>
+          </div>
+      </section>
 
       <!-- Experience -->
       <section class="section" id="experience">
@@ -199,6 +221,14 @@
               <li class="project__stack-item">Cloud APIs</li>
               <li class="project__stack-item">AI Optimization</li>
             </ul>
+            <div class="project__links">
+              <a href="https://github.com/nafis-hoque/SmartHome-AI" class="link link--icon" aria-label="GitHub" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="link link--icon" aria-label="Demo">
+              <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
           </div>
 
           <div class="project">
@@ -215,6 +245,14 @@
               <li class="project__stack-item">Cloud</li>
               <li class="project__stack-item">Monitoring</li>
             </ul>
+            <div class="project__links">
+              <a href="#" class="link link--icon" aria-label="GitHub">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="#" class="link link--icon" aria-label="Demo">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -222,25 +260,72 @@
       <!-- Skills -->
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">Java</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">Go</li>
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">Spring Boot</li>
-          <li class="skills__list-item btn btn--plain">Microservices</li>
-          <li class="skills__list-item btn btn--plain">AWS</li>
-          <li class="skills__list-item btn btn--plain">Azure</li>
-          <li class="skills__list-item btn btn--plain">Docker</li>
-          <li class="skills__list-item btn btn--plain">Kubernetes</li>
-          <li class="skills__list-item btn btn--plain">ServiceNow</li>
-          <li class="skills__list-item btn btn--plain">CI/CD</li>
-        </ul>
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <ul class="skills__list">
+            <li class="skills__list-item btn btn--plain"><i class="fab fa-java"></i> Java</li>
+            <li class="skills__list-item btn btn--plain"><i class="fab fa-golang"></i> Go</li>
+            <li class="skills__list-item btn btn--plain"><i class="fab fa-python"></i> Python</li>
+            <li class="skills__list-item btn btn--plain"><i class="fab fa-js-square"></i> JavaScript (ES6+)</li>
+            <li class="skills__list-item btn btn--plain"><i class="fab fa-c-plusplus"></i> C++</li>
+            <li class="skills__list-item btn btn--plain"><i class="fab fa-html5"></i> HTML5</li>
+            <li class="skills__list-item btn btn--plain"><i class="fab fa-css3-alt"></i> CSS3</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks & Competencies</h3>
+          <ul class="skills__list">
+            <li class="skills__list-item btn btn--plain">ServiceNow</li>
+            <li class="skills__list-item btn btn--plain">React</li>
+            <li class="skills__list-item btn btn--plain">Microservices</li>
+            <li class="skills__list-item btn btn--plain">REST APIs</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>DevOps & Tools</h3>
+          <ul class="skills__list">
+            <li class="skills__list-item btn btn--plain">Git</li>
+            <li class="skills__list-item btn btn--plain">GitLab CI/CD</li>
+            <li class="skills__list-item btn btn--plain">Docker</li>
+            <li class="skills__list-item btn btn--plain">Kubernetes</li>
+            <li class="skills__list-item btn btn--plain">Terraform</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <ul class="skills__list">
+            <li class="skills__list-item btn btn--plain">Azure</li>
+            <li class="skills__list-item btn btn--plain">Postgres</li>
+            <li class="skills__list-item btn btn--plain">MongoDB</li>
+            <li class="skills__list-item btn btn--plain">MySQL</li>
+            <li class="skills__list-item btn btn--plain">ServiceNow CMDB</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Methodologies</h3>
+          <ul class="skills__list">
+            <li class="skills__list-item btn btn--plain">Agile (SAFe)</li>
+            <li class="skills__list-item btn btn--plain">DevSecOps</li>
+            <li class="skills__list-item btn btn--plain">ITIL</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Certifications</h3>
+          <ul class="skills__list">
+            <li class="skills__list-item btn btn--plain">AWS Solutions Architect – Associate</li>
+            <li class="skills__list-item btn btn--plain">ServiceNow CSA</li>
+            <li class="skills__list-item btn btn--plain">SAFe 5 Practitioner</li>
+            <li class="skills__list-item btn btn--plain">SAS Programming</li>
+          </ul>
+        </div>
       </section>
 
       <!-- Contact -->
       <section class="section contact center" id="contact">
         <h2 class="section__title">Contact</h2>
+        <p class="contact__text">
+          My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you! Get in touch
+        </p>
         <a href="mailto:nafisahoque@gmail.com">
           <span class="btn btn--outline">Email me</span>
         </a>

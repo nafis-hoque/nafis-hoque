@@ -135,8 +135,8 @@ button {
 ===================*/
 
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 36px;
+  height: 36px;
   border-radius: 4px;
   transition: transform 0.25s ease;
 }
@@ -330,6 +330,62 @@ main {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
+.about-card-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-card__image {
+  flex: 1;
+  max-width: 450px;
+  display: flex;
+}
+
+.about-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+
+.about-card__content {
+  flex: 1.5;
+  text-align: left; /* Overriding .project center text */
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-card__text {
+  margin: 1.5rem 0;
+  line-height: 1.7;
+}
+
+
+/* Responsive: stack on mobile */
+@media (max-width: 850px) {
+  .about-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card__image {
+    max-width: 100%;
+    height: 300px;
+  }
+
+  .about-card__content {
+    text-align: center;
+  }
+
+}
+
+
 .profile-pic {
   width: 180px;
   height: 180px;
@@ -362,30 +418,32 @@ main {
   max-width: 800px;
   margin: 0 auto;
   position: relative;
-  padding-left: 2rem;
+  left: 40px;
+  padding-left: 0;
 }
 
 .timeline::before {
   content: "";
-  position: relative;
-  left: 8px;
-  top: 0;
-  bottom: 0;
+  position: absolute;
+  left: 0px;
+  top: 6px;
+  height: 100%;
   width: 2px;
   background: var(--clr-primary);
   opacity: 0.3;
+  z-index: 1;
 }
 
 .timeline-item {
   position: relative;
   margin-bottom: 2rem;
-  padding-left: 0.1rem;
+  padding-left: 3rem;
 }
 
 .timeline-item::before {
   content: "";
-  position: relative;
-  left: 2px;
+  position: absolute;
+  left: -6px;
   top: 6px;
   width: 14px;
   height: 14px;
@@ -487,6 +545,13 @@ main {
   margin-left: 0.5em;
 }
 
+.project__links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 .skills__list {
   max-width: 450px;
   width: 95%;
@@ -496,12 +561,33 @@ main {
   justify-content: center;
 }
 
+.skill-category {
+  margin-bottom: 2rem;
+}
+
+.skill-category h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: var(--clr-fg-alt);
+}
+
 .skills__list-item {
   margin: 0.5em;
 }
 
+.skills__list-item i {
+  margin-right: 0.5em;
+}
+
 .contact {
   flex-direction: column;
+}
+
+.contact__text {
+  margin-bottom: 2rem;
+  max-width: 600px;
+  text-align: center;
 }
 
 .footer {
