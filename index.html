@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Nafis Hoque | Software Developer Portfolio" />
+
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nafis Hoque</title>
+  </head>
+
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="#" class="link">NH.</a>
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I’m <span class="about__name">Nafis Hoque.</span></h1>
+        <h2 class="about__role">A Backend Software Developer</h2>
+
+        <div class="about__container">
+        <div class="about__text">
+          <p class="about__desc">
+            I build efficient, scalable systems with a focus on backend automation,
+            microservices, and cloud-native solutions. At Amdocs, I’ve worked on
+            large-scale telecom platforms supporting AT&T’s broadband and fiber
+            operations, helping reduce manual effort and improve system reliability.
+          </p>
+        </div>
+
+        <div class="about__image">
+          <img
+            src="images/PP_Pic.png"
+            alt="Nafis Hoque profile picture"
+            loading="lazy"
+            class="profile-pic"
+            onload="this.classList.add('loaded')"
+          />
+        </div>
+      </div>
+
+        <div class="about__contact center">
+          <a href="assets/Nafis_Hoque_Resume.pdf">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/nafis-hoque"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/nafis-hoque"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Network Provisioning Automation</h3>
+            <p class="project__description">
+              Automated AT&T fiber and broadband provisioning workflows using
+              Spring Boot microservices, reducing manual effort by 40% and
+              accelerating rollout timelines.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Java</li>
+              <li class="project__stack-item">Spring Boot</li>
+              <li class="project__stack-item">REST APIs</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>CMDB Cloud Migration</h3>
+            <p class="project__description">
+              Migrated 100K+ infrastructure assets from legacy systems into a
+              cloud-based CMDB, improving data accuracy and enabling reusable APIs
+              for cross-team integrations.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">ServiceNow</li>
+              <li class="project__stack-item">PostgreSQL</li>
+              <li class="project__stack-item">AWS</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>CI/CD & Monitoring Pipelines</h3>
+            <p class="project__description">
+              Built CI/CD pipelines and monitoring solutions using Jenkins,
+              Terraform, and Dynatrace to ensure high availability and faster
+              incident resolution.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Jenkins</li>
+              <li class="project__stack-item">Terraform</li>
+              <li class="project__stack-item">Kubernetes</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">Go</li>
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">Spring Boot</li>
+          <li class="skills__list-item btn btn--plain">Microservices</li>
+          <li class="skills__list-item btn btn--plain">AWS</li>
+          <li class="skills__list-item btn btn--plain">Azure</li>
+          <li class="skills__list-item btn btn--plain">Docker</li>
+          <li class="skills__list-item btn btn--plain">Kubernetes</li>
+          <li class="skills__list-item btn btn--plain">ServiceNow</li>
+          <li class="skills__list-item btn btn--plain">CI/CD</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:nafisahoque@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__link">© 2026 Nafis Hoque</p>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
