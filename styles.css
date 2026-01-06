@@ -353,11 +353,6 @@ main {
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.16);
 }
 
-.profile-pic.loaded {
-  filter: none;
-  transform: scale(1);
-}
-
 .timeline {
   max-width: 800px;
   margin: 0 auto;
