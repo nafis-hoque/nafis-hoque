@@ -391,6 +391,7 @@ main {
   height: 14px;
   background: var(--clr-primary);
   border-radius: 50%;
+  display: block;
 }
 
 .timeline-title {
