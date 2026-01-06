@@ -145,6 +145,10 @@ button {
   transform: scale(1.05);
 }
 
+.logo::before {
+  display: none;
+}
+
 .link {
   color: var(--clr-primary);
   padding: 0 0 0.3em 0;
@@ -349,6 +353,11 @@ main {
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.16);
 }
 
+.profile-pic.loaded {
+  filter: none;
+  transform: scale(1);
+}
+
 .timeline {
   max-width: 800px;
   margin: 0 auto;
@@ -375,7 +384,7 @@ main {
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -2px;
+  left: 2px;
   top: 6px;
   width: 14px;
   height: 14px;
