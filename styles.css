@@ -765,27 +765,14 @@ main {
 }
 
 .role-container {
-  padding: 2rem 0; 
-  height: 2rem; 
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 1rem 0; 
+  min-height: 4.5rem; 
 }
 
 #role-text {
   margin: 0; 
   font-size: 2rem;
-  line-height: 2.5rem;
-  transition: transform 0.5s ease-in-out;
-  will-change: transform;
-  display: block;
-}
-
-.role-carousel {
-  display: block;
-  transition: transform 0.5s ease-in-out;
-  will-change: transform;
+  line-height: 1;
 }
 
 @media (max-width: 600px) {
@@ -846,22 +833,31 @@ main {
     padding-bottom: 2rem;
   }
 
+  #role-text {
+    font-size: 1.8rem;
+  }
+
   .scroll-container {
     display: none;
   }
 
   .timeline {
-    left: 0.5rem;
-    padding-left: 0rem;
+    left: 10px;
+    padding-right: 10px;
     max-width: 100%;
+  }
+
+  .timeline-card {
+    padding: 1.2rem;
+    margin-right: 10px;
+  }
+
+  .timeline-item {
+    padding-left: 1.8rem;
   }
 
   .timeline::before {
     left: 0px;
-  }
-
-  .timeline-item {
-    padding-left: 2rem;
   }
 
 }
