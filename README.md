@@ -18,7 +18,6 @@ A modern, responsive portfolio website showcasing my work as a Backend Software 
 - **CSS3**: Custom properties, Flexbox, Grid, animations
 - **JavaScript**: Theme toggle and interactive elements
 - **Font Awesome**: Icons
-- **Google Fonts**: Avenir font family
 
 ## 📁 Project Structure
 
@@ -45,7 +44,7 @@ nafis-hoque/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nafis-hoque/nafis-hoque.git
+   git clone https://github.com/nafis-hoque/portfolio.git
    cd nafis-hoque
    ```
 
