@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Nafis Hoque | Software Developer Portfolio" />
 
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
+
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="assets/images/icon.png" />
@@ -34,6 +37,9 @@
           <li class="nav__list-item">
             <a class="link link--nav" href="#skills">Skills</a>
           </li>
+          <li class="nav__list-item">
+             <a class="link link--nav" href="#testimonials">Testimonials</a>
+           </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#about-me">About Me</a>
           </li>
@@ -385,6 +391,31 @@
         </div>
       </section>
 
+      <!-- Testimonials -->
+      <section class="section testimonials center animate-on-scroll" id="testimonials">
+        <h2 class="section__title">Testimonials</h2>
+        <div class="testimonials__container">
+          <button class="testimonial-arrow testimonial-arrow--left" aria-label="Previous testimonial" disabled>
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="testimonial">
+            <div class="testimonial__profile">
+              <img src="https://media.licdn.com/dms/image/v2/C4D03AQHubdJusQYj0Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1647961946920?e=1771459200&amp;v=beta&amp;t=itePCUPPp_mCyQ9AGFh1dhjIseFLiOVtJGjKgq4ReLo" alt="George Bridges profile picture" class="testimonial__img" loading="lazy" />
+              <div class="testimonial__author">
+                <h3>George Bridges</h3>
+                <span class="testimonial__role">Integration Manager, Amdocs</span>
+              </div>
+            </div>
+            <blockquote class="testimonial__text">
+              A technical professional with drive best describes Nafis work ethic. I worked directly with Nafis at Amdocs. Flexibility in troubleshooting, incident management, reporting and network management are some of the areas in which he excels. Nafis is a definite team player and value add for any team!
+            </blockquote>
+          </div>
+          <button class="testimonial-arrow testimonial-arrow--right" aria-label="Next testimonial" disabled>
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
       <!-- About Me -->
       <section id="about-me" class="section animate-on-scroll">
         <h2 class="section__title">About Me</h2>
@@ -412,6 +443,9 @@
         </p>
         <a href="mailto:nafisahoque@gmail.com">
           <span class="btn btn--outline">Get in touch</span>
+        </a>
+        <a href="https://calendly.com/nafis-hoque/15min" target="_blank" rel="noopener">
+          <span class="btn btn--outline" style="margin-left: 10px;">Schedule a quick call with me</span>
         </a>
       </section>
     </main>

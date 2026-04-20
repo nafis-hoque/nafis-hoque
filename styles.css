@@ -754,6 +754,115 @@ main {
   color: var(--clr-fg);
 }
 
+/* ===============
+   Testimonials
+================ */
+.testimonials {
+  flex-direction: column;
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+.testimonials__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2em;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background-color: var(--clr-bg-alt);
+  box-shadow: var(--shadow);
+  border-radius: 0;
+  padding: 1.2em 1.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 320px;
+  min-height: 180px;
+  max-width: 100%;
+}
+.testimonial-arrow {
+  background: none;
+  border: none;
+  color: var(--clr-primary);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.2em 0.5em;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial-arrow:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+.testimonial-arrow:focus {
+  outline: 2px solid var(--clr-primary);
+}
+
+.testimonial__profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2em;
+}
+
+.testimonial__img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1.2em;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.testimonial__author h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--clr-fg-alt);
+}
+
+.testimonial__role {
+  font-size: 0.95rem;
+  color: var(--clr-primary);
+  opacity: 0.85;
+}
+
+.testimonial__text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--clr-fg);
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .testimonials__container {
+    max-width: 98vw;
+    gap: 0.5em;
+  }
+  .testimonial {
+    padding: 1em 0.4em;
+    width: 98vw;
+    min-width: 0;
+    max-width: 98vw;
+  }
+  .testimonial__img {
+    width: 48px;
+    height: 48px;
+    margin-right: 0.7em;
+  }
+  .testimonial-arrow {
+    font-size: 1.5rem;
+    padding: 0.1em 0.2em;
+  }
+}
+
 .scroll-top {
   display: none;
   position: fixed;
