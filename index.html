@@ -12,7 +12,6 @@
       referrerpolicy="no-referrer"
     />
 
-
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="assets/images/icon.png" />
     <title>Nafis Hoque Portfolio</title>
@@ -22,7 +21,7 @@
     <header class="header center">
       <h3>
         <a href="#" class="link logo">
-        <img src="assets/images/icon.png" alt="Nafis Hoque logo" />
+          <img src="assets/images/icon.png" alt="Nafis Hoque logo" />
         </a>
       </h3>
 
@@ -38,8 +37,8 @@
             <a class="link link--nav" href="#skills">Skills</a>
           </li>
           <li class="nav__list-item">
-             <a class="link link--nav" href="#testimonials">Testimonials</a>
-           </li>
+            <a class="link link--nav" href="#testimonials">Testimonials</a>
+          </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#about-me">About Me</a>
           </li>
@@ -65,33 +64,38 @@
     <main>
       <!-- About -->
       <div class="about center">
-        <h1>Hi, I’m <span class="about__name">Nafis Hoque.</span></h1>
+        <h1>Hi, I'm <span class="about__name">Nafis Hoque.</span></h1>
         <div class="role-container">
-          <h2 id="role-text">Full-stack/Backend Software Developer</h2>
+          <h2 id="role-text">Full-stack/Backend Software Engineer · ServiceNow Developer</h2>
         </div>
         <div class="about__container">
-        <div class="about__text">
-          <p class="about__desc">
-            I build efficient, scalable systems with a focus on backend automation,
-            microservices, and cloud-native solutions. At Amdocs, I’ve worked on
-            large-scale telecom platforms supporting AT&T’s broadband and fiber
-            operations, helping reduce manual effort and improve system reliability.
-            <br /><br /> 
-            My goal is to create AI-powered solutions that venture into unexplored domains, 
-            transforming ideas into meaningful, real-world applications.
-          </p>
-        </div>
+          <div class="about__text">
+            <p class="about__desc">
+              I build efficient, scalable systems with a focus on backend automation,
+              microservices, and cloud-native solutions. From automating AT&T's fiber
+              provisioning pipelines at Amdocs to shipping a production patient
+              dashboard at Alor Wellness, I work across the full stack. I develop
+              backend services in Java and Go, cloud infrastructure on AWS, and modern 
+              front-ends in React and Next.js. I focus on helping reduce manual effort and 
+              improve system reliability.
+              <br /><br />
+              As a developer, I'm drawn to unexplored domains where the right
+              solution doesn't exist yet. My goal is to create AI-powered solutions 
+              that transform ideas into meaningful, real-world applications for millions of
+              users to rely on.
+            </p>
+          </div>
 
-        <div class="about__image">
-          <img
-            src="assets/images/PP_Pic.png"
-            alt="Nafis Hoque profile picture"
-            loading="lazy"
-            class="profile-pic"
-            onload="this.classList.add('loaded')"
-          />
+          <div class="about__image">
+            <img
+              src="assets/images/PP_Pic.png"
+              alt="Nafis Hoque profile picture"
+              loading="lazy"
+              class="profile-pic"
+              onload="this.classList.add('loaded')"
+            />
+          </div>
         </div>
-      </div>
 
         <div class="about__contact center">
           <a href="assets/Nafis_Hoque_Resume.pdf">
@@ -131,7 +135,7 @@
             <div class="overview__item">
               <i class="fas fa-briefcase overview__icon"></i>
               <h3>Experience</h3>
-              <p>4+ years at Amdocs developing automation solutions for AT&T's telecom platforms, reducing manual effort by 40%.</p>
+              <p>4+ years at Amdocs developing automation solutions for AT&amp;T's telecom platforms, reducing manual effort by 40%.</p>
             </div>
           </a>
           <a href="#contact" class="overview__link">
@@ -160,55 +164,85 @@
 
       <!-- Experience -->
       <section class="section animate-on-scroll" id="experience">
-        <h2 class="section__title">Experience & Education</h2>
+        <h2 class="section__title">Experience &amp; Education</h2>
 
         <div class="timeline">
 
+          <!-- Amdocs -->
           <div class="timeline-item">
-            <h3 class="timeline-title">Software Developer — Amdocs</h3>
-            <p class="timeline-subtitle">Nov 2021 – Present</p>
+            <h3 class="timeline-title">Software Engineer / ServiceNow Developer — Amdocs</h3>
+            <p class="timeline-subtitle">Oct 2021 – Present</p>
             <p class="timeline-desc">
-              At Amdocs, I've streamlined AT&T's broadband and Gigapower workflows, automated provisioning pipelines, and migrated 100K+ assets to a cloud CMDB, improving data accuracy and efficiency.
+              At Amdocs, I've streamlined AT&amp;T's broadband and Gigapower workflows, automated provisioning pipelines, and migrated 100K+ assets to a cloud CMDB, improving data accuracy and efficiency.
             </p>
             <div class="timeline-cards">
               <div class="timeline-card">
-                Developed backend microservices for AT&amp;T Gigapower fiber activation, automating IP allocation and device provisioning and reducing manual effort by 40%.
+                Developed and maintained ServiceNow ITSM and ITOM workflows supporting AT&amp;T fiber activation, reducing average incident resolution time by 25% through automation of repetitive L1/L2 tasks.
               </div>
               <div class="timeline-card">
-                Designed highly available backend services with retries, structured logging, and resilient error handling to improve reliability and reduce incidents.
+                Automated migration of 100K+ network device records into ServiceNow CMDB using scheduled Import Sets and Transform Maps, improving asset data accuracy by 40% and reducing reconciliation errors.
               </div>
               <div class="timeline-card">
-                Built and maintained REST APIs processing high-volume provisioning traffic across network systems, middleware, and ServiceNow.
+                Built and maintained REST integrations between ServiceNow and downstream provisioning systems using Scripted REST APIs and IntegrationHub spokes, eliminating several manual handoff steps across teams.
               </div>
               <div class="timeline-card">
-                Automated migration of 100K+ Granite network assets into ServiceNow CMDB using JavaScript, improving configuration accuracy by 45%.
+                Developed Java Spring Boot microservices exposing REST APIs consumed by ServiceNow and network provisioning workflows; services containerized with Docker and deployed to AWS.
               </div>
               <div class="timeline-card">
-                Implemented ServiceNow backend logic (Business Rules, Script Includes, Flow Designer, Fix Scripts) to automate provisioning, validation, and reconciliation workflows.
+                Contributed to ServiceNow Virtual Agent and Now Assist implementations, authoring NLU topics and conversation flows to deflect routine IT support requests.
               </div>
               <div class="timeline-card">
-                Partnered with QA, product, and network engineering teams to resolve environment issues and reduce release delays by 30%.
+                Wrote Business Rules, Script Includes, Flow Designer flows, and client scripts across incident, change, and problem management modules; maintained GitLab CI pipelines for ATF and scoped app deployments.
               </div>
               <div class="timeline-card">
-                Resolved 200+ Jira tickets across distributed systems, APIs, and databases while maintaining roughly 95% on-time delivery.
-              </div>
-              <div class="timeline-card">
-                Collaborated with network engineers to turn operational needs into scalable backend features, improving end-to-end activation flow performance.
+                Resolved 200+ Jira tickets spanning distributed systems, APIs, and ServiceNow with 95% on-time delivery; received Cloud Systems Excellence Award — AT&amp;T GigaPower Project (Sep 2024).
               </div>
             </div>
           </div>
 
-          <!-- ✅ NEW ENTRY -->
+          <!-- Alor Wellness -->
           <div class="timeline-item">
-            <h3 class="timeline-title">Remote AI Specialist (Part-Time) — Handshake</h3>
-            <p class="timeline-subtitle">Jan 2026 – Present</p>
+            <h3 class="timeline-title">Technical Lead (Contract) — Alor Wellness</h3>
+            <p class="timeline-subtitle">Sep 2025 – Mar 2026 · Remote</p>
+            <p class="timeline-desc">
+              Led front-end development on a pre-launch healthcare platform offering at-home testing, virtual care, and nationwide treatment access.
+            </p>
             <div class="timeline-cards">
               <div class="timeline-card">
-                Review and validate video datasets to ensure accuracy and quality for AI and computer vision model training.
+                Built features using Next.js, React, and TypeScript across a pre-launch healthcare platform, driving migration from Squarespace to a custom application and improving maintainability and feature velocity.
+              </div>
+              <div class="timeline-card">
+                Built a full patient dashboard handling sensitive PHI — including case status, prescription history, and biomarker results — consuming third-party telemedicine and lab APIs to surface real-time patient data with secure, role-based access controls.
+              </div>
+              <div class="timeline-card">
+                Integrated third-party telemedicine APIs handling webhooks and case lifecycle events across sandbox and production environments.
               </div>
             </div>
           </div>
 
+          <!-- Handshake -->
+          <div class="timeline-item">
+            <h3 class="timeline-title">AI Specialist (Part-Time) — Handshake</h3>
+            <p class="timeline-subtitle">Jan 2026 – Present · Remote</p>
+            <div class="timeline-cards">
+              <div class="timeline-card">
+                Review and quality-assess model outputs for AI training datasets; provide structured feedback used in RLHF pipelines for LLM and computer vision model improvement.
+              </div>
+            </div>
+          </div>
+
+          <!-- JHMM -->
+          <div class="timeline-item">
+            <h3 class="timeline-title">Software Engineering Intern — JHMM Services LLC</h3>
+            <p class="timeline-subtitle">Jun 2020 – Aug 2020 · Atlanta, GA</p>
+            <div class="timeline-cards">
+              <div class="timeline-card">
+                Developed Java backend utilities to validate and process 10,000+ customer records daily, reducing manual correction effort and improving downstream data quality.
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
           <div class="timeline-item">
             <h3 class="timeline-title">Georgia State University</h3>
             <p class="timeline-subtitle">B.S. in Computer Science · Aug 2017 – May 2021</p>
@@ -217,7 +251,7 @@
               <span class="honor-badge">President's List</span>
             </div>
             <p class="timeline-desc">
-              <strong>Key Coursework:</strong> Data Structures & Algorithms, Distributed Systems,
+              <strong>Key Coursework:</strong> Data Structures &amp; Algorithms, Distributed Systems,
               Cloud Computing, Database Management, Software Engineering
             </p>
           </div>
@@ -225,20 +259,42 @@
         </div>
       </section>
 
-      <!-- Projects -->
+      <!-- Work Projects -->
       <section id="work-projects" class="section projects animate-on-scroll">
         <h2 class="section__title">Work Projects</h2>
 
         <div class="projects__grid">
           <div class="project">
-            <h3>Network Provisioning Automation</h3>
+            <h3>Alor Wellness Patient Dashboard</h3>
             <p class="project__description">
-                Automated AT&T fiber and broadband provisioning workflows using backend microservices, 
-                reducing manual effort by 40% and accelerating rollout timelines.
+              Built a full patient dashboard for a pre-launch healthcare platform, handling sensitive PHI including case status, prescription history, and biomarker results. Consumed third-party telemedicine and lab APIs with secure, role-based access controls.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">Next.js</li>
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">Telemedicine APIs</li>
+              <li class="project__stack-item">PHI / HIPAA</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://dashboard.alorwellness.com" class="link link--icon" aria-label="Demo" target="_blank" rel="noopener">
+                <i class="fas fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3>Network Provisioning Automation</h3>
+            <p class="project__description">
+              Automated AT&amp;T fiber and broadband provisioning workflows using backend microservices,
+              reducing manual effort by 40% and accelerating rollout timelines.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Java Spring Boot</li>
+              <li class="project__stack-item">ServiceNow</li>
               <li class="project__stack-item">REST APIs</li>
+              <li class="project__stack-item">Docker</li>
+              <li class="project__stack-item">AWS</li>
             </ul>
           </div>
 
@@ -246,29 +302,48 @@
             <h3>CMDB Cloud Migration</h3>
             <p class="project__description">
               Migrated 100K+ infrastructure assets from legacy systems into a
-              cloud-based CMDB, improving data accuracy and enabling reusable APIs
+              cloud-based CMDB using Import Sets and Transform Maps, improving data accuracy by 40% and enabling reusable APIs
               for cross-team integrations.
             </p>
             <ul class="project__stack">
               <li class="project__stack-item">ServiceNow</li>
+              <li class="project__stack-item">JavaScript</li>
               <li class="project__stack-item">PostgreSQL</li>
               <li class="project__stack-item">AWS</li>
             </ul>
           </div>
 
-          <div class="project">
-            <h3>CI/CD & Monitoring Pipelines</h3>
-            <p class="project__description">
-              Built CI/CD pipelines and monitoring solutions using Jenkins,
-              Terraform, and Dynatrace to ensure high availability and faster
-              incident resolution.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Jenkins</li>
-              <li class="project__stack-item">Terraform</li>
-              <li class="project__stack-item">Kubernetes</li>
-            </ul>
+          <div class="project__row-center">
+            <div class="project">
+              <h3>CI/CD &amp; Monitoring Pipelines</h3>
+              <p class="project__description">
+                Built CI/CD pipelines and monitoring solutions using GitLab CI, GitHub Actions,
+                Terraform, and PagerDuty to ensure high availability and faster
+                incident resolution.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">GitLab CI/CD</li>
+                <li class="project__stack-item">GitHub Actions</li>
+                <li class="project__stack-item">Terraform</li>
+                <li class="project__stack-item">Kubernetes</li>
+                <li class="project__stack-item">PagerDuty</li>
+              </ul>
+            </div>
+
+            <div class="project">
+              <h3>ServiceNow CMDB Reconciliation Toolkit</h3>
+              <p class="project__description">
+                A lightweight Python tool that queries ServiceNow CMDB via REST API and flags stale or duplicate CI records. Deployed as an AWS Lambda function on a scheduled basis to support ongoing data hygiene workflows.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">Python</li>
+                <li class="project__stack-item">ServiceNow Table API</li>
+                <li class="project__stack-item">AWS Lambda</li>
+                <li class="project__stack-item">REST APIs</li>
+              </ul>
+            </div>
           </div>
+          
         </div>
       </section>
 
@@ -287,16 +362,16 @@
             <ul class="project__stack">
               <li class="project__stack-item">Go</li>
               <li class="project__stack-item">Java</li>
+              <li class="project__stack-item">AWS IoT Core</li>
               <li class="project__stack-item">Event-Driven Systems</li>
-              <li class="project__stack-item">Cloud APIs</li>
               <li class="project__stack-item">AI Optimization</li>
             </ul>
             <div class="project__links">
               <a href="https://github.com/nafis-hoque/SmartHome-AI" class="link link--icon" aria-label="GitHub" target="_blank" rel="noopener">
-              <i class="fab fa-github"></i> GitHub
+                <i class="fab fa-github"></i> GitHub
               </a>
               <a href="#" class="link link--icon" aria-label="Demo">
-              <i class="fas fa-external-link-alt"></i> Demo
+                <i class="fas fa-external-link-alt"></i> Demo
               </a>
             </div>
           </div>
@@ -330,71 +405,89 @@
       <!-- Skills -->
       <section class="section skills animate-on-scroll" id="skills">
         <h2 class="section__title">Skills</h2>
+
         <div class="skill-category">
           <h3>Backend Languages</h3>
           <ul class="skills__list">
-            <li class="skills__list-item btn btn--plain"><i class="fab fa-java"></i> Java <span class="skill-experience">Experienced</span></li>
-            <li class="skills__list-item btn btn--plain"><i class="fab fa-golang"></i> Go <span class="skill-experience">Basic</span></li>
-            <li class="skills__list-item btn btn--plain"><i class="fab fa-python"></i> Python <span class="skill-experience">Basic</span></li>
-            <li class="skills__list-item btn btn--plain"><i class="fab fa-c-plusplus"></i> C++ <span class="skill-experience">Basic</span></li>
+            <li class="skills__list-item btn btn--plain"><i class="fab fa-java"></i> Java (Spring Boot) <span class="skill-experience">Advanced</span></li>
+            <li class="skills__list-item btn btn--plain"><i class="fab fa-python"></i> Python <span class="skill-experience">Advanced</span></li>
+            <li class="skills__list-item btn btn--plain"><i class="fab fa-golang"></i> Go <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">Bash <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">C++ <span class="skill-experience">Basic</span></li>
           </ul>
         </div>
+
         <div class="skill-category">
-          <h3>Frontend Languages</h3>
+          <h3>Frontend Languages &amp; Frameworks</h3>
           <ul class="skills__list">
-            <li class="skills__list-item btn btn--plain"><i class="fab fa-js-square"></i> JavaScript <span class="skill-experience">Experienced</span></li>
-            <li class="skills__list-item btn btn--plain">TypeScript <span class="skill-experience">Experienced</span></li>
+            <li class="skills__list-item btn btn--plain"><i class="fab fa-js-square"></i> JavaScript <span class="skill-experience">Advanced</span></li>
+            <li class="skills__list-item btn btn--plain">TypeScript <span class="skill-experience">Advanced</span></li>
+            <li class="skills__list-item btn btn--plain">React <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">Next.js <span class="skill-experience">Intermediate</span></li>
             <li class="skills__list-item btn btn--plain"><i class="fab fa-html5"></i> HTML <span class="skill-experience">Intermediate</span></li>
             <li class="skills__list-item btn btn--plain"><i class="fab fa-css3-alt"></i> CSS3 <span class="skill-experience">Intermediate</span></li>
           </ul>
         </div>
+
         <div class="skill-category">
-          <h3>Frameworks & Technologies</h3>
+          <h3>ServiceNow</h3>
           <ul class="skills__list">
-            <li class="skills__list-item btn btn--plain">Microservices <span class="skill-experience">Experienced</span></li>
-            <li class="skills__list-item btn btn--plain">REST APIs <span class="skill-experience">Experienced</span></li>
-            <li class="skills__list-item btn btn--plain">ServiceNow <span class="skill-experience">Experienced</span></li>
-            <li class="skills__list-item btn btn--plain">tReac <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">ITSM / ITOM <span class="skill-experience">Advanced</span></li>
+            <li class="skills__list-item btn btn--plain">CMDB <span class="skill-experience">Advanced</span></li>
+            <li class="skills__list-item btn btn--plain">Flow Designer <span class="skill-experience">Advanced</span></li>
+            <li class="skills__list-item btn btn--plain">Business Rules &amp; Script Includes <span class="skill-experience">Advanced</span></li>
+            <li class="skills__list-item btn btn--plain">Scripted REST APIs <span class="skill-experience">Advanced</span></li>
+            <li class="skills__list-item btn btn--plain">IntegrationHub <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">Virtual Agent / Now Assist <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">ATF &amp; Scoped Apps <span class="skill-experience">Intermediate</span></li>
           </ul>
         </div>
+
         <div class="skill-category">
-          <h3>DevOps & Tools</h3>
+          <h3>Cloud &amp; Infrastructure</h3>
           <ul class="skills__list">
-            <li class="skills__list-item btn btn--plain">Terraform <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">AWS (Lambda, ECS, IoT Core, S3, RDS, CloudWatch) <span class="skill-experience">Intermediate</span></li>
             <li class="skills__list-item btn btn--plain">Docker <span class="skill-experience">Intermediate</span></li>
             <li class="skills__list-item btn btn--plain">Kubernetes <span class="skill-experience">Intermediate</span></li>
-            <li class="skills__list-item btn btn--plain">Git <span class="skill-experience">Intermediate</span></li>
-            <li class="skills__list-item btn btn--plain">GitLab CI/CD <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">Terraform <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">Ansible <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">Microsoft Azure <span class="skill-experience">Basic</span></li>
           </ul>
         </div>
+
+        <div class="skill-category">
+          <h3>DevOps &amp; Tools</h3>
+          <ul class="skills__list">
+            <li class="skills__list-item btn btn--plain">GitLab CI/CD <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">GitHub Actions <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">Git <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">PagerDuty <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">Jira <span class="skill-experience">Intermediate</span></li>
+          </ul>
+        </div>
+
         <div class="skill-category">
           <h3>Databases</h3>
           <ul class="skills__list">
-            <li class="skills__list-item btn btn--plain">ServiceNow CMDB <span class="skill-experience">Experienced</span></li>
-            <li class="skills__list-item btn btn--plain">PostgreSQL <span class="skill-experience">Basic</span></li>
-            <li class="skills__list-item btn btn--plain">MongoDB <span class="skill-experience">Basic</span></li>
-            <li class="skills__list-item btn btn--plain">MySQL <span class="skill-experience">Basic</span></li>
+            <li class="skills__list-item btn btn--plain">ServiceNow CMDB <span class="skill-experience">Advanced</span></li>
+            <li class="skills__list-item btn btn--plain">PostgreSQL <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">MySQL <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">MongoDB <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">Redis <span class="skill-experience">Intermediate</span></li>
           </ul>
         </div>
-        <div class="skill-category">
-          <h3>Cloud & Infrastructure</h3>
-          <ul class="skills__list">
-            <li class="skills__list-item btn btn--plain">Cloud Computing <span class="skill-experience">Intermediate</span></li>
-            <li class="skills__list-item btn btn--plain">Microsoft Azure <span class="skill-experience">Basic</span></li>
-            <li class="skills__list-item btn btn--plain">AWS Lambda <span class="skill-experience">Basic</span></li>
-            <li class="skills__list-item btn btn--plain">Azure Kubernetes Service <span class="skill-experience">Basic</span></li>
-          </ul>
-        </div>
+
         <div class="skill-category">
           <h3>Methodologies</h3>
           <ul class="skills__list">
-            <li class="skills__list-item btn btn--plain">Agile</li>
-            <li class="skills__list-item btn btn--plain">SAFe</li>
-            <li class="skills__list-item btn btn--plain">DevOps</li>
-            <li class="skills__list-item btn btn--plain">DevSecOps</li>
-            <li class="skills__list-item btn btn--plain">ITIL</li>
+            <li class="skills__list-item btn btn--plain">Microservices <span class="skill-experience">Advanced</span></li>
+            <li class="skills__list-item btn btn--plain">REST APIs <span class="skill-experience">Advanced</span></li>
+            <li class="skills__list-item btn btn--plain">Agile / SAFe <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">ITIL <span class="skill-experience">Intermediate</span></li>
+            <li class="skills__list-item btn btn--plain">DevOps / DevSecOps <span class="skill-experience">Intermediate</span></li>
           </ul>
         </div>
+
         <div class="skill-category">
           <h3>Certifications</h3>
           <ul class="skills__list">
@@ -440,13 +533,14 @@
           <div class="about-card__content project">
             <h3>Life Outside of Code</h3>
             <p class="about-card__text">
-              I believe great engineering requires balance. When I'm not coding, I find my balance by hiking or traveling with my wife. 
-              As a dedicated tech enthusiast, I enjoy building custom PCs and researching the latest smartphones and accessories. 
-              I'm a mechanical keyboard hobbyist, appreciating the tactile intersection of hardware and software. 
+              I believe great engineering requires balance. When I'm not coding, I find my balance by hiking or traveling with my wife.
+              As a dedicated tech enthusiast, I enjoy building custom PCs and researching the latest smartphones and accessories.
+              I'm a mechanical keyboard hobbyist, appreciating the tactile intersection of hardware and software.
               Beyond technology, I find creative focus in graphic design, while prioritizing downtime for self-improvement
               and mental health.
             </p>
           </div>
+        </div>
       </section>
 
       <!-- Contact -->
@@ -479,4 +573,3 @@
     <script src="./script.js"></script>
   </body>
 </html>
-
